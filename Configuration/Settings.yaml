@@ -1,0 +1,6 @@
+Task:
+  Todo:
+    mvc:
+      routes:
+        'Task.Todo':
+          position: 'start'

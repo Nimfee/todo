@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "task/todo",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Task\\Todo\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Task.Todo"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+#                                                                        #
+# Default routes configuration for the Todo package                      #
+#                                                                        #
+
+-
+  name: 'Todo screen'
+  uriPattern: 'task/todo'
+  defaults:
+    '@package':    'Task.Todo'
+    '@controller': 'Standard'
+    '@action':     'index'
+    '@format':     'html'
+

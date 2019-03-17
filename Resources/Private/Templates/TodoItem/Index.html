@@ -1,0 +1,37 @@
+<f:layout name="Default" />
+
+<f:section name="Title">A list of todo items</f:section>
+
+<f:section name="Content">
+
+    <f:if condition="{todoItems}">
+        <f:then>
+            <ul>
+                <f:for each="{todoItems}" as="todoItem">
+                    <li>
+                        <f:link.action action="show" arguments="{todoItem: todoItem}">{todoItem.name}</f:link.action>
+                        <f:link.action action="edit" arguments="{todoItem: todoItem}">Edit</f:link.action>
+                        <f:link.action action="done" arguments="{todoItem: todoItem}">
+                            <f:if condition="{todoItem.status} == 0">
+                                <f:then>
+                                    Done
+                                </f:then>
+                                <f:else>
+                                    Undo
+                                </f:else>
+                            </f:if>
+                        </f:link.action>
+
+                        <f:form action="delete" arguments="{todoItem: todoItem}">
+                            <f:form.submit value="Delete" />
+                        </f:form>
+                    </li>
+                </f:for>
+            </ul>
+        </f:then>
+        <f:else>
+            <p>No todo items created yet.</p>
+        </f:else>
+    </f:if>
+    <p><f:link.action action="new">Create a new todo item</f:link.action></p>
+</f:section>
