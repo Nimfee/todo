@@ -11,5 +11,3 @@ to edit the description.
 
 By pressing 'Undo' you'll mark task as 'undone'.
 By pressing 'Done' you'll mark task as 'done'.
-
-May be installed as 'task/todo'
