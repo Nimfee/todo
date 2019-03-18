@@ -46,7 +46,7 @@ class TodoItem
     }
 
     /**
-     * @return string
+     * @return bool
      */
     public function getStatus()
     {
@@ -54,7 +54,7 @@ class TodoItem
     }
 
     /**
-     * @param string $status
+     * @param bool $status
      * @return void
      */
     public function setStatus($status)
